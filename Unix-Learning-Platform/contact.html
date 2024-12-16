@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="commands.html">Commands</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <!-- Add a hidden input for Web3Forms access key -->
+            <input type="hidden" name="access_key" value="979fb9de-cc8a-4f6e-a7fc-7fd17d3b021a">
+
+            <input type="submit" value="Send">
+        </form>
+        <div id="form-message" style="display: none; color: #8A2BE2; margin-top: 20px;"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 UNIX Learning Platform</p>
+  </footer>
+</body>
+</html>
